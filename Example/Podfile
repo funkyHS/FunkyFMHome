@@ -1,3 +1,7 @@
+source 'git@github.com:funkyHS/FunkyFMSpecs.git'  #私有的远程代码仓库
+source 'https://github.com/CocoaPods/Specs.git'  #官方仓库的地址
+
+
 use_frameworks!
 
 target 'FunkyFMHome_Example' do

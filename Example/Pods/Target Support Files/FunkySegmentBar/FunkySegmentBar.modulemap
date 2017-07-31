@@ -1,0 +1,6 @@
+framework module FunkySegmentBar {
+  umbrella header "FunkySegmentBar-umbrella.h"
+
+  export *
+  module * { export * }
+}

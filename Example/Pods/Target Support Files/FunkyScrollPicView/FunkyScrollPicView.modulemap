@@ -1,0 +1,6 @@
+framework module FunkyScrollPicView {
+  umbrella header "FunkyScrollPicView-umbrella.h"
+
+  export *
+  module * { export * }
+}

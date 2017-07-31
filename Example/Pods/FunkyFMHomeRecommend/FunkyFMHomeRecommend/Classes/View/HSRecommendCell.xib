@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="ZOD-A9-H2c" customClass="HSRecommendCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZOD-A9-H2c" id="9fv-j3-zPK">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="149.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2oQ-Ns-JCM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="liveRadioCellPoint" translatesAutoresizingMaskIntoConstraints="NO" id="1kq-k2-9fn">
+                                <rect key="frame" x="11" y="12.5" width="10" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="5kN-FC-cpw"/>
+                                    <constraint firstAttribute="height" constant="10" id="uuA-HE-o3a"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="小编推荐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5m-Fh-guN">
+                                <rect key="frame" x="26" y="9" width="56" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gdq-Bu-k18">
+                                <rect key="frame" x="275" y="3.5" width="35" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="更多&gt;">
+                                    <color key="titleColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="more:" destination="ZOD-A9-H2c" eventType="touchUpInside" id="caW-Mz-VJA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1kq-k2-9fn" firstAttribute="leading" secondItem="2oQ-Ns-JCM" secondAttribute="leadingMargin" constant="3" id="6zT-p8-meX"/>
+                            <constraint firstItem="1kq-k2-9fn" firstAttribute="centerY" secondItem="2oQ-Ns-JCM" secondAttribute="centerY" id="J9y-ou-L83"/>
+                            <constraint firstAttribute="height" constant="35" id="PxW-gN-NnW"/>
+                            <constraint firstItem="Gdq-Bu-k18" firstAttribute="centerY" secondItem="2oQ-Ns-JCM" secondAttribute="centerY" id="QUq-bl-lWk"/>
+                            <constraint firstItem="b5m-Fh-guN" firstAttribute="leading" secondItem="1kq-k2-9fn" secondAttribute="trailing" constant="5" id="SYE-yt-IvY"/>
+                            <constraint firstItem="b5m-Fh-guN" firstAttribute="centerY" secondItem="2oQ-Ns-JCM" secondAttribute="centerY" id="fFY-vT-ucS"/>
+                            <constraint firstAttribute="trailing" secondItem="Gdq-Bu-k18" secondAttribute="trailing" constant="10" id="nk4-Ny-rVB"/>
+                        </constraints>
+                    </view>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ecf-hv-jGs">
+                        <rect key="frame" x="0.0" y="35" width="320" height="114.5"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="H93-Zp-mnL">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="ZOD-A9-H2c" id="rQD-cj-efN"/>
+                            <outlet property="delegate" destination="ZOD-A9-H2c" id="BfA-F8-KLA"/>
+                        </connections>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ecf-hv-jGs" firstAttribute="leading" secondItem="9fv-j3-zPK" secondAttribute="leading" id="38u-E4-Rnc"/>
+                    <constraint firstItem="2oQ-Ns-JCM" firstAttribute="top" secondItem="9fv-j3-zPK" secondAttribute="top" id="5ba-WR-y3e"/>
+                    <constraint firstItem="ecf-hv-jGs" firstAttribute="top" secondItem="2oQ-Ns-JCM" secondAttribute="bottom" id="Xas-Ab-80S"/>
+                    <constraint firstAttribute="trailing" secondItem="2oQ-Ns-JCM" secondAttribute="trailing" id="bYU-IU-b2Y"/>
+                    <constraint firstAttribute="bottom" secondItem="ecf-hv-jGs" secondAttribute="bottom" id="bmD-BO-ai9"/>
+                    <constraint firstItem="2oQ-Ns-JCM" firstAttribute="leading" secondItem="9fv-j3-zPK" secondAttribute="leading" id="eiX-Em-DTf"/>
+                    <constraint firstAttribute="trailing" secondItem="ecf-hv-jGs" secondAttribute="trailing" id="gzH-qD-SR7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionView" destination="ecf-hv-jGs" id="Eo7-ov-i7r"/>
+                <outlet property="flowLayout" destination="H93-Zp-mnL" id="VYi-dE-a7o"/>
+                <outlet property="titleLabel" destination="b5m-Fh-guN" id="dzo-8F-aGy"/>
+            </connections>
+            <point key="canvasLocation" x="267" y="165"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="liveRadioCellPoint" width="16" height="16"/>
+    </resources>
+</document>

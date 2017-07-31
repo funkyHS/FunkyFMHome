@@ -1,0 +1,6 @@
+framework module FunkyMenueView {
+  umbrella header "FunkyMenueView-umbrella.h"
+
+  export *
+  module * { export * }
+}

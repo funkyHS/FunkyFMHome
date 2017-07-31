@@ -1,0 +1,39 @@
+{
+  "name": "FunkyFMHome",
+  "version": "0.1.0",
+  "summary": "FunkyFMHome",
+  "description": "TODO: FunkyFMHome FM的首页模块",
+  "homepage": "https://github.com/funkyHS/FunkyFMHome",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "funkyHS": "hs1024942667@163.com"
+  },
+  "source": {
+    "git": "https://github.com/funkyHS/FunkyFMHome.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "FunkyFMHome/Classes/**/*",
+  "dependencies": {
+    "FunkySegmentBar": [
+
+    ],
+    "FunkyFMHomeRecommend": [
+
+    ],
+    "FunkyFMBase/Base": [
+
+    ],
+    "MJExtension": [
+
+    ],
+    "FunkyFMBase/Network": [
+
+    ]
+  }
+}

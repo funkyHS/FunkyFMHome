@@ -1,0 +1,6 @@
+framework module FunkyFMHome {
+  umbrella header "FunkyFMHome-umbrella.h"
+
+  export *
+  module * { export * }
+}

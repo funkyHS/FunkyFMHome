@@ -1,0 +1,6 @@
+framework module FunkyFMHomeRecommend {
+  umbrella header "FunkyFMHomeRecommend-umbrella.h"
+
+  export *
+  module * { export * }
+}

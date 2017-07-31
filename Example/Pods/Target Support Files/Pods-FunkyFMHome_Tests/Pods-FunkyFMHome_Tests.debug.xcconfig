@@ -1,0 +1,8 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/AFNetworking" "$PODS_CONFIGURATION_BUILD_DIR/FunkyFMBase" "$PODS_CONFIGURATION_BUILD_DIR/FunkyFMHome" "$PODS_CONFIGURATION_BUILD_DIR/FunkyFMHomeRecommend" "$PODS_CONFIGURATION_BUILD_DIR/FunkyMenueView" "$PODS_CONFIGURATION_BUILD_DIR/FunkyScrollPicView" "$PODS_CONFIGURATION_BUILD_DIR/FunkySegmentBar" "$PODS_CONFIGURATION_BUILD_DIR/MJExtension" "$PODS_CONFIGURATION_BUILD_DIR/SDWebImage"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/AFNetworking/AFNetworking.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/FunkyFMBase/FunkyFMBase.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/FunkyFMHome/FunkyFMHome.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/FunkyFMHomeRecommend/FunkyFMHomeRecommend.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/FunkyMenueView/FunkyMenueView.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/FunkyScrollPicView/FunkyScrollPicView.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/FunkySegmentBar/FunkySegmentBar.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/MJExtension/MJExtension.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/SDWebImage/SDWebImage.framework/Headers"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
